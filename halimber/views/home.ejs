@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+	<link href="css/main.css" rel="stylesheet"/>
+	<title>Proyecto Final UAQ</title>
+</head>
+<body class="bodyBackground">
+<div width="100%" align="center">
+	
+	<div style="width:800px; position:relative; padding:10px; padding-left:40px; top:20px;" align="left" class="well">
+		<!-- Logotipo -->
+		<img src="/img/logo1.png" width="300" style="margin-bottom:20px;">
+		<strong><a href="/logout" style="float:right;">Cerrar sesión</a></strong>
+
+		<!-- Middle Menu -->
+		<div width="100%" style="height:400px;">
+			<div style="width:260px; float:left;">
+				<input type="button" id="btnNuevo" onclick="aClick('nuevo')" class="bg-blue btnSelected" value="Nuevo cliente">
+				<input type="button" id="btnVer" onclick="aClick('ver')" class="bg-blue" value="Ver clientes">
+			</div>
+			<div style="width:540px; float:left;">
+				<!-- Nuevo Cliente -->
+				<div id="divNuevo">
+					<form id="frmCliente" name="frmCliente" method="post" action="/api/createCliente">
+						<h3>Nuevo Cliente</h3>
+						<span>Correo:</span><br>
+						<input id="correo" name="correo" type="text" placeholder="Correo" value=""><br>
+						<span>Nombres:</span><br>
+						<input id="nombres" name="nombres" type="text" placeholder="Nombre" value=""><br>
+						<span>Apellidos:</span><br>
+						<input id="apellidos" name="apellidos" type="text" placeholder="Nombre" value=""><br>
+						<span>Telefono:</span><br>
+						<input id="telefono" name="telefono" type="text" placeholder="Nombre" value=""><br>
+						<input type="button" class="bg-green" onclick="registro()" value="Registrar cliente">
+					</form>
+					<div class="divErrores">
+						<ul class="ulErrores"></ul>
+					</div>
+				</div>
+				<!-- Ver Clientes -->
+				<div id="divVer" style="display:none;">
+					<table id="tblVer">
+						<thead>
+							<tr>
+								<th align="left" width="100">Correo</th>
+								<th align="left" width="100">Nombres</th>
+								<th align="left" width="100">Apellidos</th>
+								<th align="left" width="100">Telefono</th>
+								<th align="left" width="100"></th>
+							</tr>
+						</thead>
+						<tbody id="bodyVer">
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div width="100%" align="center">
+			Proyecto Final - Universidad Autónoma de Querétaro<br>
+			<strong>Integrantes:</strong><br>
+			Karina García Cuevas<br>
+			Robarto Valle<br>
+			
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

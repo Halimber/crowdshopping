@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link href="css/main.css" rel="stylesheet"/>
+	<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="/bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet"/>
+	<title>Halimber</title>
+</head>
+<body>
+<div width="100%" align="center">
+	
+	<div style="width:380px; position:relative; padding:10px; top:50px;" align="left" class="well">
+		<!--<img src="/img/logo1.png" width="300" style="margin-bottom:50px;">-->
+
+		<h4>Halimber Test</h4>
+		<a href="/auth/facebook" class="btn btn-block btn-social btn-facebook">
+			<i class="fa fa-facebook"></i> Entrar con Facebook
+		</a>
+		<br>
+		<a href="/auth/twitter" class="btn btn-block btn-social btn-twitter">
+			<i class="fa fa-twitter"></i> Entrar con Twitter
+		</a>
+
+		<!-- Registro -->
+		<div id="divRegistro" style="display:none;">
+			<form id="frmRegistro" action="/api/createUser" method="post">
+				<h3>Registro</h3>
+				<span>Correo:</span><br>
+				<input id="correo" name="correo" type="text" placeholder="Correo" value=""><br>
+				<span>Contraseña:</span><br>
+				<input id="password" name="password" type="password" placeholder="Contraseña" value=""><br>
+				<span>Repetir Contraseña:</span><br>
+				<input id="verifyPassword" name="verifyPassword" type="password" placeholder="Repetir Contraseña" value=""><br>
+				<span>Nombres:</span><br>
+				<input id="nombres" name="nombres" type="text" placeholder="Nombre" value=""><br>
+				<span>Apellidos:</span><br>
+				<input id="apellidos" name="apellidos" type="text" placeholder="Nombre" value=""><br>
+				<input type="button" class="bg-green" onclick="registro()" value="¡Registrarme!">
+			</form>
+			<div class="divErrores">
+				<ul class="ulErrores"></ul>
+			</div>
+		</div>
+		<!-- End Registro -->
+	</div>
+	
+</div>
+</body>
+</html>

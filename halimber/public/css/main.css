@@ -1,0 +1,64 @@
+.well{
+	background-color:#F0F0F0;
+	border-radius: 10px;
+}
+.bodyBackground{
+	background: url('/img/bg.jpg') top left no-repeat; background-attachment:fixed;
+	background-size:cover;
+}
+input[type="text"], input[type="password"]{
+	background: #FFF;
+	border-radius: 10px;
+	border: 0px;
+	height: 30px;
+	width:80%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+input[type="button"], button{
+	border-radius: 10px;
+	border: 0px;
+	height: 30px;
+	width:80%;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	cursor: pointer;
+}
+input[type="button"]:hover, button:hover{
+	background-color:#F90;
+}
+input[type="text"].error, input[type="password"].error{
+	background-color:#D20;
+	color:#FFF; 
+}
+.bg-blue{
+	background-color: #09F;
+	color: #FFF;
+}
+.bg-green{
+	background-color: #8A0;
+	color: #FFF;
+}
+a{
+	color:#09F;
+}
+a:hover{
+	color:#F90;
+}
+.btnSelected{
+	background-color:#F90;
+	font-weight: bold;
+}
+.selected{
+	color:#F90;
+}
+.divErrores{
+	color:#D00;
+}
+.img-icon{
+	cursor: pointer;
+}

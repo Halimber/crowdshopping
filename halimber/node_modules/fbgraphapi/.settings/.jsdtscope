@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="node_modules/mocha/node_modules/glob/node_modules/minimatch/test/|node_modules/mocha/node_modules/jade/lib/|node_modules/mocha/node_modules/mkdirp/examples/|node_modules/mocha/node_modules/mkdirp/test/|node_modules/mocha/node_modules/growl/|node_modules/mocha/node_modules/jade/node_modules/mkdirp/|node_modules/mocha/lib/reporters/|node_modules/mocha/node_modules/glob/|node_modules/mocha/node_modules/jade/lib/nodes/|node_modules/mocha/node_modules/glob/node_modules/inherits/|lib/|node_modules/mocha/node_modules/glob/node_modules/minimatch/|node_modules/mocha/node_modules/mkdirp/|node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/|node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/|node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib/|node_modules/mocha/node_modules/jade/node_modules/mkdirp/examples/|node_modules/mocha/node_modules/glob/node_modules/graceful-fs/|test/|node_modules/mocha/node_modules/jade/testing/|node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/|node_modules/mocha/node_modules/jade/node_modules/commander/|node_modules/mocha/node_modules/jade/|node_modules/mocha/lib/interfaces/|node_modules/mocha/node_modules/glob/test/|node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/test/|node_modules/mocha/lib/browser/|node_modules/mocha/node_modules/commander/|node_modules/mocha/node_modules/debug/|node_modules/mocha/node_modules/glob/node_modules/graceful-fs/test/|node_modules/mocha/lib/|node_modules/mocha/node_modules/jade/node_modules/commander/lib/|node_modules/mocha/node_modules/growl/lib/|node_modules/mocha/node_modules/diff/|node_modules/mocha/node_modules/glob/examples/|node_modules/mocha/node_modules/debug/node_modules/ms/|node_modules/mocha/" kind="src" path=""/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry excluding="node_modules/glob/node_modules/minimatch/test/|node_modules/jade/lib/|node_modules/mkdirp/examples/|node_modules/mkdirp/test/|node_modules/growl/|node_modules/jade/node_modules/mkdirp/|lib/reporters/|node_modules/glob/|node_modules/jade/lib/nodes/|node_modules/glob/node_modules/inherits/|node_modules/glob/node_modules/minimatch/|node_modules/mkdirp/|node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/|node_modules/jade/node_modules/mkdirp/test/|node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib/|node_modules/jade/node_modules/mkdirp/examples/|node_modules/glob/node_modules/graceful-fs/|node_modules/jade/testing/|node_modules/glob/node_modules/minimatch/node_modules/sigmund/|node_modules/jade/node_modules/commander/|node_modules/jade/|lib/interfaces/|node_modules/glob/test/|node_modules/glob/node_modules/minimatch/node_modules/sigmund/test/|lib/browser/|node_modules/commander/|node_modules/debug/|node_modules/glob/node_modules/graceful-fs/test/|lib/|node_modules/jade/node_modules/commander/lib/|node_modules/growl/lib/|node_modules/diff/|node_modules/glob/examples/|node_modules/debug/node_modules/ms/" kind="src" path="node_modules/mocha"/>
+	<classpathentry excluding="reporters/|interfaces/|browser/" kind="src" path="node_modules/mocha/lib"/>
+	<classpathentry kind="src" path="node_modules/mocha/lib/browser"/>
+	<classpathentry kind="src" path="node_modules/mocha/lib/interfaces"/>
+	<classpathentry kind="src" path="node_modules/mocha/lib/reporters"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/commander"/>
+	<classpathentry excluding="node_modules/ms/" kind="src" path="node_modules/mocha/node_modules/debug"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/debug/node_modules/ms"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/diff"/>
+	<classpathentry excluding="node_modules/minimatch/test/|node_modules/inherits/|node_modules/minimatch/|node_modules/minimatch/node_modules/lru-cache/test/|node_modules/minimatch/node_modules/lru-cache/lib/|node_modules/graceful-fs/|node_modules/minimatch/node_modules/sigmund/|test/|node_modules/minimatch/node_modules/sigmund/test/|node_modules/graceful-fs/test/|examples/" kind="src" path="node_modules/mocha/node_modules/glob"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/examples"/>
+	<classpathentry excluding="test/" kind="src" path="node_modules/mocha/node_modules/glob/node_modules/graceful-fs"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/node_modules/graceful-fs/test"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/node_modules/inherits"/>
+	<classpathentry excluding="test/|node_modules/lru-cache/test/|node_modules/lru-cache/lib/|node_modules/sigmund/|node_modules/sigmund/test/" kind="src" path="node_modules/mocha/node_modules/glob/node_modules/minimatch"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test"/>
+	<classpathentry excluding="test/" kind="src" path="node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/test"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/node_modules/minimatch/test"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/glob/test"/>
+	<classpathentry excluding="lib/" kind="src" path="node_modules/mocha/node_modules/growl"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/growl/lib"/>
+	<classpathentry excluding="lib/|node_modules/mkdirp/|lib/nodes/|node_modules/mkdirp/test/|node_modules/mkdirp/examples/|testing/|node_modules/commander/|node_modules/commander/lib/" kind="src" path="node_modules/mocha/node_modules/jade"/>
+	<classpathentry excluding="nodes/" kind="src" path="node_modules/mocha/node_modules/jade/lib"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/jade/lib/nodes"/>
+	<classpathentry excluding="lib/" kind="src" path="node_modules/mocha/node_modules/jade/node_modules/commander"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/jade/node_modules/commander/lib"/>
+	<classpathentry excluding="test/|examples/" kind="src" path="node_modules/mocha/node_modules/jade/node_modules/mkdirp"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/jade/node_modules/mkdirp/examples"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/jade/node_modules/mkdirp/test"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/jade/testing"/>
+	<classpathentry excluding="examples/|test/" kind="src" path="node_modules/mocha/node_modules/mkdirp"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/mkdirp/examples"/>
+	<classpathentry kind="src" path="node_modules/mocha/node_modules/mkdirp/test"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
