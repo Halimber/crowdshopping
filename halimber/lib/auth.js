@@ -4,6 +4,7 @@ var FacebookStrategy        = require('passport-facebook').Strategy;
 var TwitterStrategy         = require('passport-twitter').Strategy;
 var FoursquareStrategy      = require('passport-foursquare').Strategy;
 var GoogleStrategy          = require('passport-google-oauth').Strategy;
+var LinkedInStrategy          = require('passport-linkedin').Strategy;
 
 
 var db = require('../models');
@@ -98,8 +99,8 @@ passport.use(new GoogleStrategy({
 
 // LinkedIn Strategy
 passport.use(new LinkedInStrategy({
-        consumerKey: 'LINKEDIN_API_KEY',
-        consumerSecret: 'LINKEDIN_SECRET_KEY',
+        consumerKey: '78holu1mblcxdh',
+        consumerSecret: 'r8OhmPSOemZmW10S',
         callbackURL: "/auth/linkedin/callback"
     },
     function(token, tokenSecret, profile, done) {
