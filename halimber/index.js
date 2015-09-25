@@ -51,7 +51,7 @@ app.get('/logout',function(req,res,next){
 	res.redirect('/');
 });
 
-// Facebook Login
+// Facebook Request
 app.get('/auth/facebook', passport.authenticate('facebook',{scope:['user_posts','user_status','user_location','email','user_events','rsvp_event','user_likes']} ));
 app.get('/auth/facebook/callback',
   	passport.authenticate('facebook', { 
@@ -60,7 +60,7 @@ app.get('/auth/facebook/callback',
 	})
 );
 
-// Twitter Login
+// Twitter Request
 app.get('/auth/twitter',
 passport.authenticate('twitter'));
 
@@ -71,6 +71,16 @@ function(req, res) {
 	res.redirect('/');
 });
 
+// Foursquare Request
+app.get('/auth/foursquare',
+	passport.authenticate('foursquare'));
+
+app.get('/auth/foursquare/callback', 
+	passport.authenticate('foursquare', { failureRedirect: '/login' }),
+	function(req, res) {
+    	// Successful authentication, redirect home.
+    	res.redirect('/');
+});
 /* 
 	Name: proccessUserData
 	Autor: Yamil Díaz Aguirre

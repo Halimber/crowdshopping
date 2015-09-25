@@ -2,6 +2,8 @@ var passport                = require('passport');
 var LocalStrategy           = require('passport-local').Strategy;
 var FacebookStrategy        = require('passport-facebook').Strategy;
 var TwitterStrategy         = require('passport-twitter').Strategy;
+var FoursquareStrategy      = require('passport-foursquare').Strategy;
+var GoogleStrategy          = require('passport-google-oauth').Strategy;
 
 
 var db = require('../models');
@@ -56,6 +58,38 @@ passport.use(new TwitterStrategy({
         console.log(profile);
         /*
         User.findOrCreate({ twitterId: profile.id }, function (err, user) {
+            return done(err, user);
+        });
+        */
+    }
+));
+
+// Foursquare Strategy
+passport.use(new FoursquareStrategy({
+        clientID: 'FOURSQUARE_CLIENT_ID',
+        clientSecret: 'FOURSQUARE_CLIENT_SECRET',
+        callbackURL: "/auth/foursquare/callback"
+    },
+    function(accessToken, refreshToken, profile, done) {
+        console.log(profile);
+        /*
+        User.findOrCreate({ foursquareId: profile.id }, function (err, user) {
+            return done(err, user);
+        });
+        */
+    }
+));
+
+// Google Strategy
+passport.use(new GoogleStrategy({
+        consumerKey: 'GOOGLE_CONSUMER_KEY',
+        consumerSecret: 'GOOGLE_CONSUMER_SECRET',
+        callbackURL: "/auth/google/callback"
+    },
+    function(token, tokenSecret, profile, done) {
+        console.log(profile);
+        /*
+        User.findOrCreate({ googleId: profile.id }, function (err, user) {
             return done(err, user);
         });
         */
