@@ -96,6 +96,22 @@ passport.use(new GoogleStrategy({
     }
 ));
 
+// LinkedIn Strategy
+passport.use(new LinkedInStrategy({
+        consumerKey: 'LINKEDIN_API_KEY',
+        consumerSecret: 'LINKEDIN_SECRET_KEY',
+        callbackURL: "/auth/linkedin/callback"
+    },
+    function(token, tokenSecret, profile, done) {
+        console.log(profile);
+        /*
+        User.findOrCreate({ linkedinId: profile.id }, function (err, user) {
+            return done(err, user);
+        });
+        */
+    }
+));
+
 // Usada para logeo Web
 passport.use(new LocalStrategy({
         usernameField: 'correo',

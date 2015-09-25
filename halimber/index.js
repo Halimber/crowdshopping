@@ -81,6 +81,17 @@ app.get('/auth/foursquare/callback',
     	// Successful authentication, redirect home.
     	res.redirect('/');
 });
+
+// Linkedin Request
+app.get('/auth/linkedin', passport.authenticate('linkedin'));
+app.get('/auth/linkedin/callback', 
+	passport.authenticate('linkedin', { failureRedirect: '/login' }),
+	function(req, res) {
+		// Successful authentication, redirect home.
+		res.redirect('/');
+});
+
+
 /* 
 	Name: proccessUserData
 	Autor: Yamil Díaz Aguirre
