@@ -132,8 +132,6 @@ proccessUserData = function(accessToken,profile){
         estado: (profile._json.location) ? profile._json.location.name : null
     };
 
-	console.log('1');
-	console.log(data);
 	db['haUsuario'].findOrCreate({where:data,defaults:{fb_id: profile._json.id} }).then(function(usuario){
 		if(usuario){
 			profile['_json']['likes']['data'].some(function(like){
