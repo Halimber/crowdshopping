@@ -145,7 +145,7 @@ proccessUserData = function(accessToken,profile){
 				// 2- Crea páginas que le gustan a usuario
 				console.log('2');
 				console.log(pagina);
-				db['haPagina'].findOrCreate({where:pagina,defaults:pagina}).then(function(haPagina){
+				db['fbPagina'].findOrCreate({where:pagina,defaults:pagina}).then(function(haPagina){
 					//console.log(haPagina);
 				});
 				/*
