@@ -27,7 +27,7 @@ app.use(passport.session());
 require('./lib/auth');
 Auth = require('./lib/authorization');
 
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 5001))
 app.use(express.static(__dirname + '/public'))
 app.set('views', __dirname+'/views');
 

@@ -14,8 +14,8 @@ sequelize = new Sequelize('finaluaq', 'root', '', {
 });
 */
 
-sequelize = new Sequelize('halimber', 'root', 'Yamil12345', {
-  host: 'rideqro.ck55xvcjczse.us-west-2.rds.amazonaws.com',
+sequelize = new Sequelize('halimber', 'uaq', 'uaq12345', {
+  host: 'uaq2.ckxbcbonrr8q.us-west-2.rds.amazonaws.com',
   dialect:  'mysql',
   protocol: 'mysql',
   logging: false,
